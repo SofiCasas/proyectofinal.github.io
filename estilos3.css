@@ -1,0 +1,126 @@
+:root {
+ --rojo: #E50914;
+ --fondo: #141414;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ background: var(--fondo);
+ font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+ width: 90%;
+ margin: auto;
+}
+
+header {
+ padding: 30px 0;
+}
+
+header .contenedor{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+header .logotipo {
+ font-family: 'Bebas Neue', cursive;
+ font-weight: normal;
+ color: var(--rojo);
+ font-size: 40px;
+}
+
+header nav a {
+ color: #AAA;
+ text-decoration: none;
+ margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+ color: #FFF;
+}
+
+.película-principal{
+  font-size: 16px;
+  min-height: 40.20em;
+  color: #fff;
+  background:linear-gradient(rgba(0,0,0,.50)0%, rgba(0,0, 0,.50)100%),url(/Users/usuario/Desktop/duna.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display:flex;
+  align-items:end;
+}
+
+.película-principal .contenedor{
+  margin: auto;
+  margin-bottom: 6.25em;
+}
+
+.película-principal .titulo{
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+
+.película-principal .descripcion{
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.película-principal .boton{
+  background: rgba(0,0,0,0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color:#fff;
+  margin-right: 1.25em;
+  cursor:pointer;
+  transition: .3s ease all;
+  font-size: 1.12em;
+}
+
+.película-principal .boton:hover{
+  background: #fff;
+  color:#000;
+}
+
+.película-principal .boton i{
+  margin-right: 1.25em;
+}
+
+/* Contenedor titulo y controles */
+.contenedor-titulo-controles{
+  display: flex;
+  justify-content:space-between;
+  align-items: end;
+}
+
+.contenedor-titulo-controles h3{
+  color: #fff;
+  font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button{
+  background: #fff;
+  height: 3px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+  margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo{
+  background: red;
+}
